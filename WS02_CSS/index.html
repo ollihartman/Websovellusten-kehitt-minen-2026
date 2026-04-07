@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ollin html sivu</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        color: rgb(0, 0, 0);
+      }
+      body {
+        background-color: lightgray;
+      }
+      .content-box {
+  padding: 20px;
+  margin: 20px;
+  background-color: #ed9d13;
+  border: 3px solid #000000;
+}
+table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 2px solid #000000;
+      padding: 8px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #b86e6e;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 80%;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 2px solid #000000;
+      border-radius: 4px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    img {
+      width: 175px;
+      height: auto;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Tervetuloa Ollin sivulle!</h1>
+    <p>Kuva minusta</p>
+    <img src="./Images/Olli.png" alt="Kuvalinkki ei toimi" />
+    <div class="content-box">
+    <h2>Harrastukset</h2>
+    <ul>
+      <li>Sulkapallo</li>
+      <li>Kuntosali</li>
+      <li>Formuloiden katsominen</li>
+    </ul>
+    <a href="https://slopegame-online.com/">Hauska peli!</a>
+
+</div>
+
+    <table>
+      <tr>
+        <th>Suoritetut kurssit</th>
+        <th>Meneillään olevat kurssit</th>
+      </tr>
+      <tr>
+        <td>Digitaalisen palvelun perusteet, Läpi</td>
+        <td>Websivuston kehittäminen</td>
+      </tr>
+      <tr>
+        <td>Asiantuntijaviestintä, Läpi</td>
+        <td>Liiketoimintaympäristöt</td>
+      </tr>
+      <tr>
+        <td>ICT-infrastruktuurin ja pilvipalveluiden perusteet, Läpi</td>
+        <td>Professional Communication in English</td>
+      </tr>
+    </table>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    
+
+
+  </body>
+</html>
