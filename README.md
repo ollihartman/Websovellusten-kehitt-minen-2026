@@ -42,6 +42,11 @@ Sisältää:
 
 ## Kehitysehdotuksia
 
+- lisätään `style.css` ja liitetään se HTML:ään
+- otetaan käyttöön responsiivinen asettelu
+- parannetaan lomakkeen toiminnallisuutta JavaScriptillä
+- lisätään kuvatekstit ja saavutettavuus
+
 - luo `style.css` ja liitä se HTML-sivulle
 - ota käyttöön responsiivinen asettelu
 - kehitä lomakkeen toiminnallisuutta JavaScriptin avulla
