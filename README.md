@@ -1,13 +1,14 @@
 # Websovellusten kehittäminen 2026
 
-Tämä projekti sisältää kaksi työtilaa:
+Tämä projekti sisältää kolme työtilaa, joiden avulla harjoitellaan HTML:n ja CSS:n perusteita sekä edistyneempiä tyylitekniikoita.
 
 - `WS01_HTML/` — yksinkertainen HTML-sivu `index.html`-tiedostona
-- `WS02_CSS/` — CSS-tyylitiedostoja varten varattu kansio (tällä hetkellä tyhjä)
+- `WS02_CSS/` — CSS-tyylitiedostoja varten varattu kansio
+- `WS03_AdvancedCSS/` — edistyneemmät CSS-tekniikat ja tyylit
 
 ## Projektin tarkoitus
 
-Tämän projektin tarkoituksena on harjoitella perusweb-kehitystä HTML:n ja CSS:n avulla.
+Projektin tarkoituksena on harjoitella web-kehitystä HTML:n ja CSS:n avulla sekä oppia vaiheittain rakentamaan selkeä ja tyylikäs sivu.
 
 ## Sisältö
 
@@ -15,7 +16,7 @@ Tämän projektin tarkoituksena on harjoitella perusweb-kehitystä HTML:n ja CSS
 
 Sisältää:
 
-- otsikon ja tervetuloviestin
+- sivun otsikon ja tervetuloviestin
 - kuvan (`Images/Olli.png`)
 - harrastusluettelon
 - ulkoisen linkin
@@ -24,17 +25,24 @@ Sisältää:
 
 ### `WS02_CSS/`
 
-- Tyhjä kansio, jonka tarkoitus on sisältää projektin CSS-tiedostot myöhemmin.
+- paikka CSS-tyylitiedostoille
+- liitä tyylit `WS01_HTML/index.html`-tiedostoon
+
+### `WS03_AdvancedCSS/`
+
+- sisältää edistyneempiä CSS-esimerkkejä ja harjoituksia
+- mahdollisesti responsiivisia asetteluja ja tehosteita
+- sisältää kuvia `Images/`-kansiossa
 
 ## Käyttö
 
-1. Avaa `WS01_HTML/index.html` selaimessa.
-2. Tarkista, että kuva `Images/Olli.png` näkyy oikein.
-3. Lisää CSS-tyylit `WS02_CSS/`-kansioon ja linkitä ne HTML-tiedostoon.
+1. Avaa `WS01_HTML/index.html` selaimessasi.
+2. Testaa, että kuva `Images/Olli.png` näkyy oikein.
+3. Lisää ja muuta CSS-tyylejä `WS02_CSS/` tai `WS03_AdvancedCSS/` -kansioissa.
 
-## Parannusehdotuksia
+## Kehitysehdotuksia
 
-- lisätään `style.css` ja liitetään se HTML:ään
-- otetaan käyttöön responsiivinen asettelu
-- parannetaan lomakkeen toiminnallisuutta JavaScriptillä
-- lisätään kuvatekstit ja saavutettavuus
+- luo `style.css` ja liitä se HTML-sivulle
+- ota käyttöön responsiivinen asettelu
+- kehitä lomakkeen toiminnallisuutta JavaScriptin avulla
+- paranna saavutettavuutta kuvateksteillä ja selkeällä rakenteella
