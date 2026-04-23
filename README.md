@@ -1,10 +1,12 @@
 # Websovellusten kehittäminen 2026
 
-Tämä projekti sisältää kolme työtilaa, joiden avulla harjoitellaan HTML:n ja CSS:n perusteita sekä edistyneempiä tyylitekniikoita.
+Tämä projekti sisältää viisi työtilaa, joiden avulla harjoitellaan HTML:n ja CSS:n perusteita sekä edistyneempiä tyylitekniikoita, sivuasettelua ja responsiivista suunnittelua.
 
 - `WS01_HTML/` — yksinkertainen HTML-sivu `index.html`-tiedostona
 - `WS02_CSS/` — CSS-tyylitiedostoja varten varattu kansio
 - `WS03_AdvancedCSS/` — edistyneemmät CSS-tekniikat ja tyylit
+- `WS04_Pagelayout/` — sivuasettelun harjoituksia ja erilaisia asettelumalleja
+- `WS05_ResponsiveDesign/` — responsiivisen suunnittelun esimerkkejä ja harjoituksia
 
 ## Projektin tarkoitus
 
@@ -32,7 +34,19 @@ Sisältää:
 
 - sisältää edistyneempiä CSS-esimerkkejä ja harjoituksia
 - mahdollisesti responsiivisia asetteluja ja tehosteita
-- sisältää kuvia `Images/`-kansiossa
+- sisältää kuvia `images/`-kansiossa
+
+### `WS04_Pagelayout/`
+
+- demoja ja harjoituksia sivun asettelusta
+- sisältää `index.html` ja `style.css` tiedostot
+- erilaisia asettelumenetelmiä ja paikoittelua
+
+### `WS05_ResponsiveDesign/`
+
+- responsiivisen suunnittelun esimerkkejä
+- sisältää `index.html` ja kuvat `images/`-kansiossa
+- harjoituksia eri näyttökoko- ja laitealustoilla
 
 ## Käyttö
 
