@@ -1,6 +1,6 @@
 # Websovellusten kehittäminen 2026
 
-Tämä projekti sisältää kuusi työtilaa, joiden avulla harjoitellaan HTML:n ja CSS:n perusteita sekä edistyneempiä tyylitekniikoita, sivuasettelua, responsiivista suunnittelua ja Bootstrap-kirjaston käyttöä.
+Tämä projekti sisältää seitsemän työtilaa, joiden avulla harjoitellaan HTML:n ja CSS:n perusteita sekä edistyneempiä tyylitekniikoita, sivuasettelua, responsiivista suunnittelua ja Bootstrap-kirjaston käyttöä.
 
 - `WS01_HTML/` — yksinkertainen HTML-sivu `index.html`-tiedostona
 - `WS02_CSS/` — CSS-tyylitiedostoja varten varattu kansio
@@ -8,6 +8,7 @@ Tämä projekti sisältää kuusi työtilaa, joiden avulla harjoitellaan HTML:n 
 - `WS04_Pagelayout/` — sivuasettelun harjoituksia ja erilaisia asettelumalleja
 - `WS05_ResponsiveDesign/` — responsiivisen suunnittelun esimerkkejä ja harjoituksia
 - `WS06_Bootstrap/` — Bootstrap-kirjaston käyttöä ja komponentteja
+- `WS07_Project/` — projektityö, joka yhdistää opittuja taitoja
 
 ## Projektin tarkoitus
 
@@ -54,6 +55,13 @@ Sisältää:
 - Bootstrap-kirjaston esimerkkejä ja harjoituksia
 - sisältää `index.html` ja kuvat `images/`-kansiossa
 - navigointipalkki, ruudukkojärjestelmä ja painikkeita
+
+### `WS07_Project/`
+
+- Projektityö, joka yhdistää kaikki opitut taidot
+- sisältää `index.html` ja kuvat `images/`-kansiossa
+- aihe: Sulkapallo harrastuksena (badminton)
+- navigaatio, Bootstrap-komponentin, ja responsiivinen asettelu
 
 ## Käyttö
 
