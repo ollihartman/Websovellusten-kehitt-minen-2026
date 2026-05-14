@@ -13,7 +13,7 @@
     }
 
     .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/image.png');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/tanska.png');
       height: 450px;
       background-size: cover;
       background-position: center;
@@ -59,16 +59,7 @@
       align-self: flex-start;
       margin-top: -0.75rem;
     }
-    
-  /* Poistetaan oletusnuoli ja tehdään tekstistä normaalin näköinen */
-summary {
-  list-style: none;
-  cursor: pointer;
-  display: block;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
+
   
 
 
@@ -111,6 +102,43 @@ summary::-webkit-details-marker {
       background-color: darkblue;
       color: white;
     }
+
+
+    .achievements-section {
+      margin-left: 0;
+      margin-right: auto;
+      padding: 0 1rem;
+    }
+
+    .achievements-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+      justify-content: flex-start;
+      padding: 0 1rem;
+      
+    }
+
+    .achievements-content {
+      flex: 1;
+      max-width: 560px;
+    }
+
+    .achievements-content .list-group-item {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #b41010;
+    }
+
+    .sulkapallo-container {
+      flex: 0 1 350px;
+      max-width: 350px;
+    }
+
+    .olympic-image {
+      flex: 0 1 350px;
+      max-width: 350px;
+    }
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -140,24 +168,22 @@ summary::-webkit-details-marker {
     </nav>
     <section class="hero">
         <div class="container text-center">
-            <h1 class="display-4">Sulkapallo</h1>
-            <p class="lead">Sulkapallo on hauska ja monipuolinen urheilulaji, joka tarjoaa erinomaisen tavan pitää kuntoa yllä ja nauttia liikunnasta. Sulkapallo on suosittu harrastus ympäri maailmaa, ja se sopii kaikenikäisille ja tasoisille pelaajille.</p>
+            <h1 class="display-4">Victor Axelsen</h1>
+            <p class="lead">"The Alien"</p>
         </div>
     </section>
     <div class="info-section">
     <div class="info">
-      <h2>Perustietoa sulkapallosta</h2>
+      <h2>Pelaajan tiedot</h2>
       
-      <p style="font-size: 1.2rem;"> Sulkapallo on maailman nopein mailapeli, jota pelataan joko kaksinpelinä tai nelinpelinä. 
-    Vaikka laji on lähtöisin Euroopasta, se on nykyään äärimmäisen suosittua erityisesti Aasian maissa, 
-    kuten Kiinassa, Indonesiassa ja Japanissa, missä laji on lähes kansallisurheilun asemassa.</p>
-      <p style="font-size: 1.2rem;"> Sulkapallo on taktinen ja fyysisesti erittäin vaativa laji. Hyvältä pelaajalta vaaditaan 
-      erinomaisen peruskunnon lisäksi räjähtävää nopeutta, kestävyyttä ja salamannopeita refleksejä. 
-      Lajissa korostuvat myös koordinaatiokyky ja kyky lukea vastustajan peliä sekunnin murto-osissa.</p>
+      <p style="font-size: 1.2rem;">Viktor Axelsen on tanskalainen sulkapalloilija ja yksi maailman kaikkien aikojen parhaista miespelaajista. Hän syntyi 4. tammikuuta 1994 Odensessa, Tanskassa. Axelsen tunnetaan erityisesti voimakkaista lyönneistään, hyvästä liikkuvuudestaan ja rauhallisesta pelityylistään.
+
+Axelsen aloitti sulkapallon pelaamisen jo nuorena ja nousi nopeasti kansainväliselle huipulle. Hän voitti junioreiden maailmanmestaruuden vuonna 2010 ja nousi myöhemmin maailman rankingin kärkeen. Hänen uransa suurimpiin saavutuksiin kuuluvat olympiakulta Tokion olympialaisissa vuonna 2021 sekä useat maailmanmestaruusmitalit.</p>
     </div>
 
     <div class="image">
-      <img src="images/image2.jpg" alt="Sulkapallo">
+      <img src="images/victor.jpg" alt="Sulkapallo">
+      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; text-align: center;">Kuva: Fauziananta / CC BY 4.0</p>
     </div>
     </div>
 
@@ -166,69 +192,46 @@ summary::-webkit-details-marker {
 
     
 
-
-<div class="sulkapallo-container">
-  <img src="images/sulkapallo hahmo.png" alt="puhuva sulkapallo" style="background-color: transparent;">
+<div class="achievements-wrapper">
+<div class="achievements-content">
+<h2>Suurimpia saavutuksia</h2>
+     
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item" style="color: gold;">Kulta</li>
+  <li class="list-group-item">Olymipalaiset Pariisi</li>
+  <li class="list-group-item">2024</li>
+</ul>
+<ul class="list-group list-group-horizontal-sm">
+  <li class="list-group-item" style="color: gold;">Kulta</li>
+  <li class="list-group-item">Olymipalaiset Tokio</li>
+  <li class="list-group-item">2020</li>
+</ul>
+<ul class="list-group list-group-horizontal-md">
+  <li class="list-group-item" style="color: gold;">Kulta</li>
+  <li class="list-group-item">MM-kisat Tokio</li>
+  <li class="list-group-item">2022</li>
+</ul>
+<ul class="list-group list-group-horizontal-lg">
+  <li class="list-group-item" style="color: gold;">Kulta</li>
+  <li class="list-group-item">MM-kisat Glasgow</li>
+  <li class="list-group-item">2017</li>
+</ul>
+<p style="font-size: 1.2rem; margin-top: 1rem;">Lisäksi useita mitaleita Euroopan mestaruksista.</p>
 </div>
 
-<div class="container mt-1">
-  <div class="row">
-
-    <!-- Kortti 1 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Nopeus</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info1">
-      Lue
-    </button>
-
-    <div id="info1" class="collapse mt-2">
-      Sulkapallo on maailman nopein mailapeli. Nopein mitattu lyönti on 493 km/h
-    </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kortti 2 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Olympialaiset</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info2">
-      Lue
-    </button>
-
-    <div id="info2" class="collapse mt-2">
-      Sulkapallo on olympialaisissa mukana vuodesta 1992. Kiina on menestyinein maa olympialaisissa.
-    </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Kortti 3 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Reaktiot</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info3">
-      Lue
-    </button>
-
-    <div id="info3" class="collapse mt-2">
-      Huippupelaajien reaktiokyky on uskomaton. He pystyvät reagoimaan lyönteihin jopa 0,2 sekunnissa.
-    </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+<div class="olympic-image">
+  <img src="images/Olympic.png" alt="Olympic" style="width: 100%; height: auto; border-radius: 0.75rem; object-fit: cover;">
+</div>
 </div>
 
-<div class="footer"
+
+
+
+
+<div class="footer">
       style="background-color: #343a40; color: white; text-align: center; padding: 1rem 0;">
       <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
-
+</div>
  <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  </body>
