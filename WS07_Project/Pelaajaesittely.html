@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sulkapallo harrastuksena</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <style>
-    body {background-color: white;
+    body {
+      background-color: white;
       color: #212529;
     }
     /* Logon koon hallinta (TÄRKEÄ) */
-.navbar-brand img {
-  height: 40px; /* Määrittää logon korkeuden navbarissa */
-  width: auto;  /* Pitää kuvasuhteen oikeana */
-  display: block;
-  filter: invert(1);
-}
+    .navbar-brand img {
+      height: 2.5rem; /* Määrittää logon korkeuden navbarissa */
+      width: auto; /* Pitää kuvasuhteen oikeana */
+      display: block;
+      filter: invert(1);
+    }
 
     .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/tanska.png');
-      height: 450px;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("images/tanska.png");
+      height: 28.125rem;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -29,26 +35,66 @@
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
     }
 
     .hero .container {
       margin: 0 !important;
-      padding: 20px 20px 10px;
+      padding: 1.25rem 1.25rem 0.625rem;
     }
 
     .hero h1 {
       font-weight: 700;
       font-size: 3.5rem;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.0625rem;
     }
 
     .hero p {
       font-size: 1.3rem;
-      max-width: 800px;
+      max-width: 50rem;
       margin: 0 auto;
       font-weight: 300;
+    }
+
+    /* Responsive hero adjustments */
+    @media (max-width: 992px) {
+      .hero {
+        height: 20rem;
+        background-position: center 40%;
+      }
+      .hero .container {
+        padding: 1rem !important;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+        max-width: 40rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        height: 14rem;
+        background-position: center 30%;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .hero .container {
+        padding: 0.75rem !important;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
     }
 
     .info-section {
@@ -61,18 +107,35 @@
     }
 
     .info {
-      flex: 1 1 320px;
-      max-width: 560px;
+      flex: 1 1 20rem;
+      max-width: 35rem;
       align-self: flex-start;
       margin-top: -0.75rem;
     }
-
-  
-
+    @media (max-width: 576px) {
+      .info {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      .info-section {
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1.5;
+      }
+      .info p,
+      .info ul,
+      .info li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+      }
+      .info p {
+        margin-bottom: 0.75rem;
+      }
+    }
 
     .image {
-      flex: 0 1 420px;
-      max-width: 420px;
+      flex: 0 1 26.25rem;
+      max-width: 26.25rem;
     }
 
     .image img {
@@ -80,7 +143,7 @@
       height: auto;
       display: block;
       border-radius: 0.75rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.18);
       object-fit: cover;
     }
 
@@ -91,25 +154,43 @@
     }
 
     .sulkapallo-container img {
-      max-width: 550px;
+      max-width: 34.375rem;
       height: auto;
       border-radius: 0.75rem;
     }
 
-    .row  {
+    .row {
       margin-bottom: 2rem;
       padding: 2rem 1rem 2rem;
     }
 
     .card {
-      border: 5px solid #dee2e6;
+      border: 0.3125rem solid #dee2e6;
       border-radius: 1rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.18);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
       background-color: darkblue;
       color: white;
     }
 
+    /* Cards responsive adjustments */
+    @media (max-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+      .card {
+        margin-bottom: 1rem;
+      }
+      .card .card-body {
+        padding: 1rem;
+      }
+      .card .btn {
+        width: 100%;
+      }
+    }
 
     .achievements-section {
       margin-left: 0;
@@ -123,28 +204,91 @@
       gap: 2rem;
       justify-content: flex-start;
       padding: 0 1rem;
-      
     }
 
     .achievements-content {
       flex: 1;
-      max-width: 560px;
+      max-width: 35rem;
     }
 
     .achievements-content .list-group-item {
-      border-width: 1px;
+      border-width: 0.0625rem;
       border-style: solid;
       border-color: #b41010;
     }
 
     .sulkapallo-container {
-      flex: 0 1 350px;
-      max-width: 350px;
+      flex: 0 1 21.875rem;
+      max-width: 21.875rem;
     }
 
     .olympic-image {
-      flex: 0 1 350px;
-      max-width: 350px;
+      flex: 0 1 21.875rem;
+      max-width: 21.875rem;
+    }
+
+    @media (max-width: 992px) {
+      .achievements-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+      }
+
+      .achievements-content,
+      .olympic-image {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .achievements-content .list-group {
+        flex-direction: column;
+      }
+
+      .achievements-content .list-group-item {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .achievements-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem 0.75rem;
+      }
+
+      .achievements-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 0.5rem;
+      }
+
+      .achievements-content .list-group,
+      .achievements-content .list-group-horizontal,
+      .achievements-content .list-group-horizontal-sm,
+      .achievements-content .list-group-horizontal-md,
+      .achievements-content .list-group-horizontal-lg {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.5rem;
+        align-items: stretch;
+      }
+
+      .achievements-content .list-group-item {
+        width: 100% !important;
+        text-align: center;
+        padding: 0.75rem 1rem;
+      }
+
+      .olympic-image {
+        width: 80%;
+        max-width: 18rem;
+        margin: 0 auto;
+      }
+
+      .achievements-content .list-group-item:first-child {
+        margin-top: 0.25rem;
+      }
     }
 
     .footer {
@@ -164,7 +308,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.jpg" alt="logo"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -179,82 +325,121 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Yleistä</a>
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Yleistä</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="Varusteet.html">Varusteet</a></li>
-            <li class="nav-item"><a class="nav-link active" href="Pelaajaesittely.html">Pelaaja esittely</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Varusteet.html">Varusteet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Pelaajaesittely.html"
+                >Pelaaja esittely</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Säännöt.html">Säännöt</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="hero">
-        <div class="container text-center">
-            <h1 class="display-4">Victor Axelsen</h1>
-            <p class="lead">"The Alien"</p>
-        </div>
+      <div class="container text-center">
+        <h1 class="display-4">Victor Axelsen</h1>
+        <p class="lead">"The Alien"</p>
+      </div>
     </section>
     <div class="info-section">
-    <div class="info">
-      <h2>Pelaajan tiedot</h2>
-      
-      <p style="font-size: 1.2rem;">Viktor Axelsen on tanskalainen sulkapalloilija ja yksi maailman kaikkien aikojen parhaista miespelaajista. Hän syntyi 4. tammikuuta 1994 Odensessa, Tanskassa. Axelsen tunnetaan erityisesti voimakkaista lyönneistään, hyvästä liikkuvuudestaan ja rauhallisesta pelityylistään.
+      <div class="info">
+        <h2>Pelaajan tiedot</h2>
 
-Axelsen aloitti sulkapallon pelaamisen jo nuorena ja nousi nopeasti kansainväliselle huipulle. Hän voitti junioreiden maailmanmestaruuden vuonna 2010 ja nousi myöhemmin maailman rankingin kärkeen. Hänen uransa suurimpiin saavutuksiin kuuluvat olympiakulta Tokion olympialaisissa vuonna 2021 sekä useat maailmanmestaruusmitalit.</p>
+        <p style="font-size: 1.2rem">
+          Viktor Axelsen on tanskalainen sulkapalloilija ja yksi maailman
+          kaikkien aikojen parhaista miespelaajista. Hän syntyi 4. tammikuuta
+          1994 Odensessa, Tanskassa. Axelsen tunnetaan erityisesti voimakkaista
+          lyönneistään, hyvästä liikkuvuudestaan ja rauhallisesta
+          pelityylistään. Axelsen aloitti sulkapallon pelaamisen jo nuorena ja
+          nousi nopeasti kansainväliselle huipulle. Hän voitti junioreiden
+          maailmanmestaruuden vuonna 2010 ja nousi myöhemmin maailman rankingin
+          kärkeen. Hänen uransa suurimpiin saavutuksiin kuuluvat olympiakulta
+          Tokion olympialaisissa vuonna 2021 sekä useat
+          maailmanmestaruusmitalit.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="images/victor.jpg" alt="Sulkapallo" class="img-fluid" />
+        <p
+          style="
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            text-align: center;
+          "
+        >
+          Kuva: Fauziananta / CC BY 4.0
+        </p>
+      </div>
     </div>
 
-    <div class="image">
-      <img src="images/victor.jpg" alt="Sulkapallo">
-      <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem; text-align: center;">Kuva: Fauziananta / CC BY 4.0</p>
+    <div class="achievements-wrapper">
+      <div class="achievements-content">
+        <h2>Suurimpia saavutuksia</h2>
+
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item" style="color: gold">Kulta</li>
+          <li class="list-group-item">Olymipalaiset Pariisi</li>
+          <li class="list-group-item">2024</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-sm">
+          <li class="list-group-item" style="color: gold">Kulta</li>
+          <li class="list-group-item">Olymipalaiset Tokio</li>
+          <li class="list-group-item">2020</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-md">
+          <li class="list-group-item" style="color: gold">Kulta</li>
+          <li class="list-group-item">MM-kisat Tokio</li>
+          <li class="list-group-item">2022</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-lg">
+          <li class="list-group-item" style="color: gold">Kulta</li>
+          <li class="list-group-item">MM-kisat Glasgow</li>
+          <li class="list-group-item">2017</li>
+        </ul>
+        <p style="font-size: 1.2rem; margin-top: 1rem">
+          Lisäksi useita mitaleita Euroopan mestaruksista.
+        </p>
+      </div>
+
+      <div class="olympic-image">
+        <img
+          src="images/Olympic.png"
+          alt="Olympic"
+          style="
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            object-fit: cover;
+          "
+          class="img-fluid"
+        />
+      </div>
     </div>
-    </div>
 
-    
-  
-
-    
-
-<div class="achievements-wrapper">
-<div class="achievements-content">
-<h2>Suurimpia saavutuksia</h2>
-     
-<ul class="list-group list-group-horizontal">
-  <li class="list-group-item" style="color: gold;">Kulta</li>
-  <li class="list-group-item">Olymipalaiset Pariisi</li>
-  <li class="list-group-item">2024</li>
-</ul>
-<ul class="list-group list-group-horizontal-sm">
-  <li class="list-group-item" style="color: gold;">Kulta</li>
-  <li class="list-group-item">Olymipalaiset Tokio</li>
-  <li class="list-group-item">2020</li>
-</ul>
-<ul class="list-group list-group-horizontal-md">
-  <li class="list-group-item" style="color: gold;">Kulta</li>
-  <li class="list-group-item">MM-kisat Tokio</li>
-  <li class="list-group-item">2022</li>
-</ul>
-<ul class="list-group list-group-horizontal-lg">
-  <li class="list-group-item" style="color: gold;">Kulta</li>
-  <li class="list-group-item">MM-kisat Glasgow</li>
-  <li class="list-group-item">2017</li>
-</ul>
-<p style="font-size: 1.2rem; margin-top: 1rem;">Lisäksi useita mitaleita Euroopan mestaruksista.</p>
-</div>
-
-<div class="olympic-image">
-  <img src="images/Olympic.png" alt="Olympic" style="width: 100%; height: auto; border-radius: 0.75rem; object-fit: cover;">
-</div>
-</div>
-
-
-
-
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
-  </div>
-</footer>
- <!-- Bootstrap JavaScript -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="index.html" class="text-white">Yleistä</a> |
+          <a href="Varusteet.html" class="text-white">Varusteet</a> |
+          <a href="Pelaajaesittely.html" class="text-white">Pelaaja esittely</a>
+          |
+          <a href="Säännöt.html" class="text-white">Säännöt</a>
+        </p>
+        <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- </body>
+  </body>
 </html>

@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sulkapallo harrastuksena</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <style>
-    body {background-color: white;
+    body {
+      background-color: white;
       color: #212529;
     }
-/* Logon koon hallinta (TÄRKEÄ) */
-.navbar-brand img {
-  height: 40px; /* Määrittää logon korkeuden navbarissa */
-  width: auto;  /* Pitää kuvasuhteen oikeana */
-  display: block;
-  filter: invert(1);
-}
+    /* Logon koon hallinta (TÄRKEÄ) */
+    .navbar-brand img {
+      height: 2.5rem; /* Määrittää logon korkeuden navbarissa */
+      width: auto; /* Pitää kuvasuhteen oikeana */
+      display: block;
+      filter: invert(1);
+    }
     .hero {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/image.png');
-      height: 450px;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("images/image.png");
+      height: 28.125rem;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -28,26 +34,66 @@
       align-items: center;
       justify-content: center;
       color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
     }
 
     .hero .container {
       margin: 0 !important;
-      padding: 20px 20px 10px;
+      padding: 1.25rem 1.25rem 0.625rem;
     }
 
     .hero h1 {
       font-weight: 700;
       font-size: 3.5rem;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.0625rem;
     }
 
     .hero p {
       font-size: 1.3rem;
-      max-width: 800px;
+      max-width: 50rem;
       margin: 0 auto;
       font-weight: 300;
+    }
+
+    /* Responsive hero adjustments */
+    @media (max-width: 992px) {
+      .hero {
+        height: 20rem;
+        background-position: center 40%;
+      }
+      .hero .container {
+        padding: 1rem !important;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+        max-width: 40rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero {
+        height: 14rem;
+        background-position: center 30%;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .hero .container {
+        padding: 0.75rem !important;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .hero p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
     }
 
     .info-section {
@@ -60,18 +106,36 @@
     }
 
     .info {
-      flex: 1 1 320px;
-      max-width: 560px;
+      flex: 1 1 20rem;
+      max-width: 35rem;
       align-self: flex-start;
       margin-top: -0.75rem;
     }
-    
 
-
+    @media (max-width: 576px) {
+      .info {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+      .info-section {
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1.6;
+      }
+      .info p,
+      .info ul,
+      .info li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+      }
+      .info p {
+        margin-bottom: 0.75rem;
+      }
+    }
 
     .image {
-      flex: 0 1 420px;
-      max-width: 420px;
+      flex: 0 1 26.25rem;
+      max-width: 26.25rem;
     }
 
     .image img {
@@ -79,7 +143,7 @@
       height: auto;
       display: block;
       border-radius: 0.75rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.18);
       object-fit: cover;
     }
 
@@ -90,23 +154,57 @@
     }
 
     .sulkapallo-container img {
-      max-width: 550px;
+      max-width: 34.375rem;
+      width: 100%;
       height: auto;
       border-radius: 0.75rem;
     }
 
-    .row  {
+    @media (max-width: 768px) {
+      .sulkapallo-container {
+        justify-content: center;
+        padding: 0.5rem 1rem 2rem;
+      }
+
+      .sulkapallo-container img {
+        max-width: 100%;
+      }
+    }
+
+    .row {
       margin-bottom: 2rem;
       padding: 2rem 1rem 2rem;
     }
 
     .card {
-      border: 5px solid #dee2e6;
+      border: 0.3125rem solid #dee2e6;
       border-radius: 1rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.18);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
       background-color: darkblue;
       color: white;
+    }
+
+    /* Make cards stack and fit on small screens */
+    @media (max-width: 768px) {
+      .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+      .card {
+        margin-bottom: 1rem;
+      }
+      .card .card-body {
+        padding: 1rem;
+      }
+      .card .card-title {
+        font-size: 1.125rem;
+      }
+      .card .btn {
+        width: 100%;
+      }
     }
 
     .footer {
@@ -126,7 +224,9 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="logo"></a>
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.jpg" alt="logo" class="img-fluid"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -141,108 +241,151 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Yleistä</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Yleistä</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="Varusteet.html">Varusteet</a></li>
-            <li class="nav-item"><a class="nav-link" href="Pelaajaesittely.html">Pelaaja esittely</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="Varusteet.html">Varusteet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pelaajaesittely.html"
+                >Pelaaja esittely</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Säännöt.html">Säännöt</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="hero">
-        <div class="container text-center">
-            <h1 class="display-4">Sulkapallo</h1>
-            <p class="lead">Sulkapallo on hauska ja monipuolinen urheilulaji, joka tarjoaa erinomaisen tavan pitää kuntoa yllä ja nauttia liikunnasta. Sulkapallo on suosittu harrastus ympäri maailmaa, ja se sopii kaikenikäisille ja tasoisille pelaajille.</p>
-        </div>
+      <div class="container text-center">
+        <h1 class="display-4">Sulkapallo</h1>
+        <p class="lead">
+          Sulkapallo on hauska ja monipuolinen urheilulaji, joka tarjoaa
+          erinomaisen tavan pitää kuntoa yllä ja nauttia liikunnasta. Sulkapallo
+          on suosittu harrastus ympäri maailmaa, ja se sopii kaikenikäisille ja
+          tasoisille pelaajille.
+        </p>
+      </div>
     </section>
     <div class="info-section">
-    <div class="info">
-      <h2>Perustietoa sulkapallosta</h2>
-      
-      <p style="font-size: 1.2rem;"> Sulkapallo on maailman nopein mailapeli, jota pelataan joko kaksinpelinä tai nelinpelinä. 
-    Vaikka laji on lähtöisin Euroopasta, se on nykyään äärimmäisen suosittua erityisesti Aasian maissa, 
-    kuten Kiinassa, Indonesiassa ja Japanissa, missä laji on lähes kansallisurheilun asemassa.</p>
-      <p style="font-size: 1.2rem;"> Sulkapallo on taktinen ja fyysisesti erittäin vaativa laji. Hyvältä pelaajalta vaaditaan 
-      erinomaisen peruskunnon lisäksi räjähtävää nopeutta, kestävyyttä ja salamannopeita refleksejä. 
-      Lajissa korostuvat myös koordinaatiokyky ja kyky lukea vastustajan peliä sekunnin murto-osissa.</p>
+      <div class="info">
+        <h2>Perustietoa sulkapallosta</h2>
+
+        <p style="font-size: 1.2rem">
+          Sulkapallo on maailman nopein mailapeli, jota pelataan joko
+          kaksinpelinä tai nelinpelinä. Vaikka laji on lähtöisin Euroopasta, se
+          on nykyään äärimmäisen suosittua erityisesti Aasian maissa, kuten
+          Kiinassa, Indonesiassa ja Japanissa, missä laji on lähes
+          kansallisurheilun asemassa.
+        </p>
+        <p style="font-size: 1.2rem">
+          Sulkapallo on taktinen ja fyysisesti erittäin vaativa laji. Hyvältä
+          pelaajalta vaaditaan erinomaisen peruskunnon lisäksi räjähtävää
+          nopeutta, kestävyyttä ja salamannopeita refleksejä. Lajissa korostuvat
+          myös koordinaatiokyky ja kyky lukea vastustajan peliä sekunnin
+          murto-osissa.
+        </p>
+      </div>
+
+      <div class="image">
+        <img src="images/image2.jpg" alt="Sulkapallo" class="img-fluid" />
+      </div>
     </div>
 
-    <div class="image">
-      <img src="images/image2.jpg" alt="Sulkapallo">
+    <div class="sulkapallo-container">
+      <img
+        src="images/sulkapallo hahmo.png"
+        alt="puhuva sulkapallo"
+        style="background-color: transparent"
+        class="img-fluid"
+      />
     </div>
-    </div>
 
-    
-  
+    <div class="container mt-1">
+      <div class="row">
+        <!-- Kortti 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Nopeus</h5>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#info1"
+              >
+                Lue
+              </button>
 
-    
+              <div id="info1" class="collapse mt-2">
+                Sulkapallo on maailman nopein mailapeli. Nopein mitattu lyönti
+                on 493 km/h
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Kortti 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Olympialaiset</h5>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#info2"
+              >
+                Lue
+              </button>
 
-<div class="sulkapallo-container">
-  <img src="images/sulkapallo hahmo.png" alt="puhuva sulkapallo" style="background-color: transparent;">
-</div>
+              <div id="info2" class="collapse mt-2">
+                Sulkapallo on olympialaisissa mukana vuodesta 1992. Kiina on
+                menestyinein maa olympialaisissa.
+              </div>
+            </div>
+          </div>
+        </div>
 
-<div class="container mt-1">
-  <div class="row">
+        <!-- Kortti 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Reaktiot</h5>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                data-bs-target="#info3"
+              >
+                Lue
+              </button>
 
-    <!-- Kortti 1 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Nopeus</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info1">
-      Lue
-    </button>
-
-    <div id="info1" class="collapse mt-2">
-      Sulkapallo on maailman nopein mailapeli. Nopein mitattu lyönti on 493 km/h
-    </div>
+              <div id="info3" class="collapse mt-2">
+                Huippupelaajien reaktiokyky on uskomaton. He pystyvät reagoimaan
+                lyönteihin jopa 0,2 sekunnissa.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Kortti 2 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Olympialaiset</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info2">
-      Lue
-    </button>
-
-    <div id="info2" class="collapse mt-2">
-      Sulkapallo on olympialaisissa mukana vuodesta 1992. Kiina on menestyinein maa olympialaisissa.
-    </div>
-        </div>
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <a href="index.html" class="text-white">Yleistä</a> |
+          <a href="Varusteet.html" class="text-white">Varusteet</a> |
+          <a href="Pelaajaesittely.html" class="text-white">Pelaaja esittely</a>
+          |
+          <a href="Säännöt.html" class="text-white">Säännöt</a>
+        </p>
+        <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
       </div>
-    </div>
+    </footer>
 
-    <!-- Kortti 3 -->
-    <div class="col-md-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Reaktiot</h5>
-          <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#info3">
-      Lue
-    </button>
-
-    <div id="info3" class="collapse mt-2">
-      Huippupelaajien reaktiokyky on uskomaton. He pystyvät reagoimaan lyönteihin jopa 0,2 sekunnissa.
-    </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
-  </div>
-</footer>
-
- <!-- Bootstrap JavaScript -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- </body>
+  </body>
 </html>

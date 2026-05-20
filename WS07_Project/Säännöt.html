@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sulkapallo harrastuksena</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <style>
+    body {background-color: white;
+      color: #212529;
+    }
+    /* Logon koon hallinta (TÄRKEÄ) */
+.navbar-brand img {
+  height: 2.5rem; /* Määrittää logon korkeuden navbarissa */
+  width: auto;  /* Pitää kuvasuhteen oikeana */
+  display: block;
+  filter: invert(1);
+}
+
+.banner {
+display: flex;
+align-items: center;
+background: #111;
+color: white;
+height: 20rem;
+
+}
+
+.left {
+width: 50%;
+padding: 2.8rem;
+box-sizing: border-box;
+}
+
+.right {
+width: 50%;
+height: 100%;
+padding: 2.8rem;
+box-sizing: border-box;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 1rem;
+}
+
+    /* Responsive banner adjustments */
+    @media (max-width: 992px) {
+      .banner {
+        height: 16rem;
+        align-items: center;
+      }
+      .left, .right {
+        padding: 1rem;
+      }
+      .left h1 {
+        font-size: 2rem;
+      }
+      .right img {
+        max-height: 14rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .banner {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        gap: 0.5rem;
+      }
+      .left, .right {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .left h1 {
+        font-size: 1.5rem;
+      }
+      .right img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+
+.col-md-6 {
+    padding: 3rem;
+    
+}
+.container img {
+    max-height: 30rem;
+    width: auto;
+}
+
+.card-body {
+    border: 0.4rem solid #0656a7;
+}
+
+    /* Responsive cards for smaller screens */
+    @media (max-width: 768px) {
+      .col-md-6, .col-md-4 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+      }
+      .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1rem;
+      }
+      .card .card-body {
+        padding: 1rem;
+      }
+      .card p, .card ul {
+        font-size: 0.95rem;
+      }
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #f8f9fa;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 2rem;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+
+
+
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Yleistä</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="Varusteet.html">Varusteet</a></li>
+            <li class="nav-item"><a class="nav-link" href="Pelaajaesittely.html">Pelaaja esittely</a></li>
+            <li class="nav-item"><a class="nav-link active" href="Säännöt.html">Säännöt</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="banner">
+        <div class="left">
+            <h1 class="display-4">Säännöt</h1>
+            <p class="lead">Tältä sivulta opit enemmän sulkapallon pelimuodoista ja säännöistä.</p>
+        </div>
+        <div class="right">
+            <img src="images/tuomari.jpg" alt="Sulkapallo" class="img-fluid">
+        </div>
+    </section>
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Pelimuodot</h2>
+      <p>Sulkapallossa on kolme pääasiallista pelimuotoa: kaksinpeli, nelinpeli ja sekanelinpeli. Kaksinpelissä pelaa kaksi pelaajaa, nelinpelissä neljä pelaajaa (kaksi paria) ja sekanelinpelissä pelaa kaksi paria, joissa on sekä mies- että naispuolisia pelaajia.</p>
+    </div>
+    <div class="col-md-6">
+      <h2>Pisteytys ja tuomarointi</h2>
+      <p>Pisteytys ja tuomarointi
+
+Sulkapallossa ottelu pelataan yleensä paras kolmesta erästä 21 pisteeseen. Erän voittamiseen tarvitaan vähintään kahden pisteen ero. Pisteen saa jokaisesta voitetusta pallosta riippumatta siitä, kumpi syötti.</p>
+
+<p>Ottelua valvoo tuomari, joka seuraa pisteitä, syöttöjä ja sääntöjen noudattamista. Kilpailuissa voidaan käyttää myös rajatuomareita tarkkailemaan, osuuko sulka kentän sisä- vai ulkopuolelle.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Sulkapallokenttä</h2>
+        <img src="images/kenttä.png" alt="Sulkapallokenttä" class="img-fluid">
+        
+      </div>
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Sulkapallo kentän rajat</h5>
+    
+    <p class="card-text"><h7><strong>Sivurajat</strong></h7>
+        <ul>
+          <li style="font-size: small;">Kaksinpelissä käytetään sisempiä sivurajoja.</li>
+          <li style="font-size: small;">Nelinpelissä käytetään uloimpia sivurajoja, jolloin kenttä on leveämpi.</li>
+        </ul>
+
+        <h7><strong>Takarajat</strong></h7>
+        <p style="font-size: small;">Takaraja on kentän uloin päätyviiva. Pallo on pelissä, kun se osuu viivan sisäpuolelle tai viivalle.</p>
+
+        <h7><strong>Syöttörajat</strong></h7>
+        <p>Syötössä käytetään eri rajoja:</p>
+        <ul>
+          <li style="font-size: small;">Kaksinpelissä syöttöalue on pitkä ja kapea.</li>
+          <li style="font-size: small;">Nelinpelissä syöttöalue on leveämpi mutta hieman lyhyempi.</li>
+          <li style="font-size: small;">Pitkä syöttöraja on eri viiva kuin kentän uloin takaraja.</li>
+        </ul>
+
+        <h7><strong>Keskiviiva</strong></h7>
+        <p style="font-size: small;">Keskiviiva jakaa syöttöalueet vasempaan ja oikeaan puoleen. Pelaaja syöttää eri puolilta pistetilanteen mukaan.</p>
+
+        <h7><strong>Verkko</strong></h7>
+        <p style="font-size: small;">Verkko sijaitsee kentän keskellä ja jakaa kentän kahteen puoliskoon. Pallon täytyy mennä verkon yli osumatta siihen liikaa.</p></p>
+  </div>
+</div>
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin: 1rem 0;">
+    Tarkat viralliset säännöt
+  </a>
+ 
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+   <a href="https://www.sulkapallo.fi/site/assets/files/1398/pelisaannot_2023-rev2.pdf" target="_blank">Sulkapallo.fi (PDF)</a>
+  </div>
+</div>
+        
+    </div>
+  </div>
+<div class="alert alert-success" role="alert">
+  <h6>Sääntöjä on monenlaisia!</h6>
+  <p> Muista, että harraste- ja mökkisulkapallossa sääntöjä ei tarvitse ottaa liian tarkasti. Tärkeintä on hauska ja reilu peli.</p>
+</div>
+  
+</div>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <p>
+      <a href="index.html" class="text-white">Yleistä</a> |
+      <a href="Varusteet.html" class="text-white">Varusteet</a> |
+      <a href="Pelaajaesittely.html" class="text-white">Pelaaja esittely</a> |
+      <a href="Säännöt.html" class="text-white">Säännöt</a>
+    </p>
+    <p>&copy; 2026 Olli Hartman. Kaikki oikeudet pidätetään.</p>
+  </div>
+</footer>
+
+ <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+</html>
